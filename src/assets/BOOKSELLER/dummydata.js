@@ -263,7 +263,7 @@ export const obsbooks = [
 export const hbbooks = [
   { id: 101, title: 'Harry Potter', author: 'J.K. Rowling', price: 255.2, rating: 3, image: HB1 },
   { id: 102, title: 'Hygge', author: 'Meik Wiking', price: 289.2, rating: 4, image: HB2 },
-  { id: 103, title: 'Fifty Shades Darker', author: 'E. L. James', price: 325.2, rating: 5, image: HB3 },
+  { id: 103, title: ' Power of Subconscious Mind', author: 'Joseph Murphy', price: 325.2, rating: 5, image: HB3 },
   { id: 104, title: 'The Two Towers', author: 'J.R.R. Tolkien', price: 425.2, rating: 4, image: HB4 },
 ]
 

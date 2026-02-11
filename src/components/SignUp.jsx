@@ -108,12 +108,12 @@ const SignUp = () => {
                 onChange={(e) =>
                   setFormData({ ...formData, password: e.target.value })
                 }
-                          />
+                />
                           
-                          <button type='button' onClick={() => setShowPassword(!showPassword)}
-                              className={Signup.togglePassword}>
-                              {showPassword ? <EyeOff className='h-5 w-5' /> : <Eye className='h-5 w-5' />}
-                           </button>
+                <button type='button' onClick={() => setShowPassword(!showPassword)}
+                    className={Signup.togglePassword}>
+                    {showPassword ? <EyeOff className='h-5 w-5' /> : <Eye className='h-5 w-5' />}
+                 </button>
             </div>
                   </div>
                   <button type='submit' className={Signup.submitBtn}>

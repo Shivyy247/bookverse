@@ -151,16 +151,19 @@ const Login = () => {
               <Lock className="h-6 w-6 text-[#43C6AC]" />
             </div>
 
-            <h2 className="mt-4 text-lg font-semibold">
-              You are already logged in
+            <h2 className={loginStyles.signedInHeading}>
+              Welcome Back
             </h2>
 
             <button
-              onClick={handleSignOut}
-              className={loginStyles.submitButton}
+              onClick={()=> navigate('/')}
+              className={loginStyles.homepageButton}
             >
-              Sign Out
-            </button>
+              Go to Homepage
+              </button>
+              <button className={loginStyles.signOutButton} onClick={handleSignOut}>
+                Sign Out
+              </button>
           </div>
         )}
       </div>

@@ -317,13 +317,6 @@ export const navItems = [
   { name: "About", path: "/about", icon: Info, color: "from-purple-400 to-indigo-500" },
   { name: "Books", path: "/books", icon: BookOpen, color: "from-emerald-400 to-teal-500" },
   { name: "Contact", path: "/contact", icon: Mail, color: "from-rose-400 to-pink-600" },
-  // Add My Orders directly to navItems
-  { 
-    name: "My Orders", 
-    path: "/orders", 
-    icon: Package, 
-    color: "from-violet-500 to-purple-600" 
-  }
 ];
 
 // BANNER

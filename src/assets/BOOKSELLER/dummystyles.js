@@ -9,20 +9,26 @@ export const navbarStyles = {
 
   container: "container mx-auto px-4 md:px-4 md:text-xs",
   logoContainer: "flex items-center",
-  logoGradient: "absolute -inset-3 rounded-full opacity-0 blur-xl group-hover:opacity-30 transition-opacity bg-gradient-to-r from-[#43C6AC] to-[#F8FFAE]",
+  logoGradient:
+    "absolute -inset-3 rounded-full opacity-0 blur-xl group-hover:opacity-30 transition-opacity bg-gradient-to-r from-[#43C6AC] to-[#F8FFAE]",
   logoImage: "h-8 w-8 rounded-full z-10",
-  logoText: "text-xl font-bold bg-gradient-to-r from-[#43C6AC] to-[#2B5876] bg-clip-text text-transparent",
-  logoUnderline: "h-0.5 w-0 bg-gradient-to-r from-[#43C6AC] to-[#F8FFAE] group-hover:w-full transition-all duration-500",
+  logoText:
+    "text-xl font-bold bg-gradient-to-r from-[#43C6AC] to-[#2B5876] bg-clip-text text-transparent",
+  logoUnderline:
+    "h-0.5 w-0 bg-gradient-to-r from-[#43C6AC] to-[#F8FFAE] group-hover:w-full transition-all duration-500",
 
   desktopNavWrapper: "hidden md:flex items-center space-x-1",
 
-  navLink: "relative group px-5 py-3.5 rounded-lg transition-all duration-300 overflow-hidden",
+  navLink:
+    "relative group px-5 py-3.5 rounded-lg transition-all duration-300 overflow-hidden",
 
   navIconWrapper: (color) =>
     `absolute -inset-1 bg-gradient-to-r ${color} rounded-full opacity-0 blur group-hover:opacity-30 transition-opacity duration-500`,
 
   navIcon: (isActive) =>
-    `relative h-5 w-5 ${isActive ? "text-white" : "text-gray-600 group-hover:text-white"} transition-colors duration-300 z-10`,
+    `relative h-5 w-5 ${
+      isActive ? "text-white" : "text-gray-600 group-hover:text-white"
+    } transition-colors duration-300 z-10`,
 
   navText: (isActive, color) =>
     `ml-2 ${
@@ -37,52 +43,51 @@ export const navbarStyles = {
   rightIconsWrapper: "hidden md:flex items-center space-x-5",
 
   cartWrapper: "relative group",
-  cartGradient: "absolute -inset-2 bg-gradient-to-r from-amber-500 to-orange-600 rounded-full opacity-0 blur-md group-hover:opacity-30 transition-opacity duration-500",
-  cartIcon: "relative h-5 w-5 text-gray-600 group-hover:text-amber-600 transition-colors duration-300 z-10",
+  cartGradient:
+    "absolute -inset-2 bg-gradient-to-r from-amber-500 to-orange-600 rounded-full opacity-0 blur-md group-hover:opacity-30 transition-opacity duration-500",
+  cartIcon:
+    "relative h-5 w-5 text-gray-600 group-hover:text-amber-600 transition-colors duration-300 z-10",
   cartBadge:
     "absolute top-[-14px] right-[-14px] flex items-center justify-center w-5 h-5 bg-gradient-to-r from-amber-500 to-orange-600 text-[10px] font-bold text-white rounded-full",
 
   loginWrapper: "relative group",
-  loginGradient: "absolute -inset-2 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full opacity-0 blur-md group-hover:opacity-30 transition-opacity duration-500",
-  loginIcon: "relative h-5 w-5 text-gray-600 group-hover:text-emerald-600 transition-colors duration-300 z-10",
+  loginGradient:
+    "absolute -inset-2 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full opacity-0 blur-md group-hover:opacity-30 transition-opacity duration-500",
+  loginIcon:
+    "relative h-5 w-5 text-gray-600 group-hover:text-emerald-600 transition-colors duration-300 z-10",
 
   menuBtn: "relative group p-1",
-  menuGradient: "absolute -inset-2 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full opacity-0 blur-md group-hover:opacity-30 transition-opacity duration-500",
+  menuGradient:
+    "absolute -inset-2 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full opacity-0 blur-md group-hover:opacity-30 transition-opacity duration-500",
   menuIcon: "relative h-6 w-6 text-gray-600 z-10",
 
-  mobileMenu: "md:hidden absolute top-full left-0 right-0 bg-white shadow-lg z-40",
+  mobileMenu:
+    "md:hidden absolute top-full left-0 right-0 bg-white shadow-lg z-40",
   mobileContainer: "container mx-auto px-4 py-4",
+
   mobileNavItem: (isActive, color) =>
     `flex items-center px-4 py-3 rounded-lg ${
       isActive ? `bg-gradient-to-r ${color}/10` : "hover:bg-gray-100"
     } transition-colors`,
 
-  mobileNavIcon: (isActive, color) =>
-    `h-5 w-5 ${isActive ? `text-${color.split('-')[1]}-500` : "text-gray-600"}`,
-
-  mobileNavText: (isActive, color) =>
-    `ml-3 ${isActive ? `text-${color.split('-')[1]}-600 font-medium` : "text-gray-600"}`,
-
-  mobileIconRow: "flex justify-between items-center mt-4",
-  mobileCartBadge:
-    "absolute top-0 right-0 -mt-1 -mr-1 w-5 h-5 flex items-center justify-center text-[10px] font-bold text-white bg-gradient-to-r from-amber-500 to-orange-600 rounded-full",
-    
-      // Update these functions:
   mobileNavIcon: (isActive, color) => {
-    const baseColor = color.includes('violet') ? 'violet' : color.split('-')[1];
+    const baseColor = color.includes("violet") ? "violet" : color.split("-")[1];
     return `h-5 w-5 ${isActive ? `text-${baseColor}-500` : "text-gray-600"}`;
   },
-  
+
   mobileNavText: (isActive, color) => {
-    const baseColor = color.includes('violet') ? 'violet' : color.split('-')[1];
-    return `ml-3 ${isActive ? `text-${baseColor}-600 font-medium` : "text-gray-600"}`;
+    const baseColor = color.includes("violet") ? "violet" : color.split("-")[1];
+    return `ml-3 ${
+      isActive ? `text-${baseColor}-600 font-medium` : "text-gray-600"
+    }`;
   },
-  
-  // Add this new helper:
-  getBaseColor: (color) => 
-    color.includes('violet') ? 'violet' : color.split('-')[1],
-  
+
+  mobileIconRow: "flex justify-between items-center mt-4",
+
+  mobileCartBadge:
+    "absolute top-0 right-0 -mt-1 -mr-1 w-5 h-5 flex items-center justify-center text-[10px] font-bold text-white bg-gradient-to-r from-amber-500 to-orange-600 rounded-full",
 };
+
 
 //banner
 

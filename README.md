@@ -1,16 +1,101 @@
-# React + Vite
+# 📚 BookVerse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive book discovery website built using **React + Vite**.  
+BookVerse provides a clean and interactive interface for exploring books, searching titles, and contacting the team through an integrated email system.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** https://bookverse-pied.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📖 Browse curated book collections
+- 🔍 Search books by title or author
+- 📬 Contact form integrated with EmailJS
+- 🎨 Modern and responsive UI
+- ⚡ Fast performance powered by Vite
+- 🌍 Deployed on Vercel
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend:** React
+- **Build Tool:** Vite
+- **Styling:** CSS
+- **Email Service:** EmailJS
+- **Deployment:** Vercel
+- **Version Control:** Git & GitHub
+
+---
+
+## 📦 Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Shivyy247/bookverse.git
+cd bookverse
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+---
+
+## 📁 Project Structure
+
+```
+bookverse/
+│
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── dummyData/
+│   ├── dummyStyles/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## 🎯 Future Improvements
+
+- 🔐 User authentication system
+- 🛒 Shopping cart functionality
+- 🌐 Real book API integration
+- 🌙 Dark mode toggle
+- 📊 Backend integration for real data
+
+---
+
+## 👩‍💻 Author
+
+**Shivani Barman**  
+Engineering Student  
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
